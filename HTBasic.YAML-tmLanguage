@@ -1,0 +1,48 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: HTBasic
+scopeName: source.basic
+fileTypes: [basic]
+uuid: 7579be69-ab90-44dc-bb18-45420320f1b3
+
+patterns:
+  - comment: Line Comment
+    name: comment.line.exclamation.basic
+    match: \!.+
+
+  - comment: Numbers
+    name: constant.numeric.basic
+    match: (-)?[0-9\.E]+\b
+
+  - comment: Paths
+    name: path.basic
+    match: \/\w+\/
+
+  - comment: FUNCTION() or SUBFUNCTION$()
+    name: meta.group
+    begin: (\w+\$)\(|([A-Z]{2,})\(
+    beginCaptures:
+      '1': {name: support.function.basic}
+      '2': {name: entity.name.function}
+    end: \)
+    patterns:
+    - include: $self
+    - name: support.parameter.basic
+      match: .
+
+  - comment: KEYWORD
+    name: keyword.control.basic
+    match: \b[A-Z]{2,}\b
+
+  - comment: Variables
+    name: variable.other.readwrite.basic
+    match: \w+(\$)?
+
+  - comment: Quoted String
+    name: quoted.double.basic
+    begin: '"'
+    end: '"'
+    patterns:
+    - name: string.other.basic
+      match: .
+...
