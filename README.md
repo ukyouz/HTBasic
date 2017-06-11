@@ -5,7 +5,7 @@ This is a syntax YAML file for Sublime Text. The target language is `HT Basic` b
 1. Downloads all the files and move all the files inside to your `Packages/User` folder for your Sublime Text.
 2. Copy your code into file with `.basic` extension.
 
-Enjoy your favorite color theme (•8•)!
+Enjoy your favorite color theme ( •8• )!
 
 ### Customization
 You can follow instruction [here](http://docs.sublimetext.info/en/latest/extensibility/syntaxdefs.html) for more details.
