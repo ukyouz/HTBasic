@@ -2,7 +2,7 @@
 This is a syntax YAML file for Sublime Text. The target language is `HT Basic` by [Trans Era](http://transera.com/).
 
 ## Usages
-1. Downloads all the files and move all the files inside to your `Packages/User` folder for your Sublime Text.
+1. Downloads all the files and move them into to your `Packages/User` folder for your Sublime Text.
 2. Copy your code into file with `.basic` extension.
 
 Enjoy your favorite color theme ( •8• )!
